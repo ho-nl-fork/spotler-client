@@ -38,4 +38,21 @@ class Campaign extends AbstractModule
         }
         return false;
     }
+
+    /**
+     * @param $encryptedTriggerId
+     * @param CampaignTriggerRequest $campaignTriggerRequest
+     * @return bool
+     * @throws \Spotler\Exceptions\SpotlerException
+     */
+    public function postCampaignStop($encryptedTriggerId, CampaignTriggerRequest $campaignTriggerRequest)
+    {
+        $response   = $this->client->execute('integrationservice-1.1.0/campaign/' . $encryptedTriggerId . '/stop', 'POST', $campaignTriggerRequest);
+        if ($this->client->getLastResponseCode() == 204)
+        {
+            return true;
+        }
+        return false;
+    }
 }
+
