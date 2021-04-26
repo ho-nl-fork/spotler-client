@@ -1,5 +1,5 @@
 {
-  "name": "steffjenl/spotler-client",
+  "name": "reach-digital/spotler-client",
   "description": "PHP Client for Spotler (spotler.nl) with support for Laravel 5.5 and higher",
   "type": "library",
   "keywords": [

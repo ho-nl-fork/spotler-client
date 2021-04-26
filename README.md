@@ -1,5 +1,5 @@
 # spotler-client
-[![Build Status](https://travis-ci.org/steffjenl/spotler-client.svg?branch=master)](https://travis-ci.org/steffjenl/spotler-client)
+[![Build Status](https://travis-ci.org/reach-digital/spotler-client.svg?branch=master)](https://travis-ci.org/reach-digital/spotler-client)
 
 PHP Client for Spotler (spotler.nl) with support for Laravel 5.5 and higher
 
@@ -8,7 +8,7 @@ PHP Client for Spotler (spotler.nl) with support for Laravel 5.5 and higher
 Install the package using composer:
 
 ```bash
-composer require steffjenl/spotler-client
+composer require reach-digital/spotler-client
 ```
 
 On Laravel versions before 5.5 you also need to add the service provider to `config/app.php` manually:
